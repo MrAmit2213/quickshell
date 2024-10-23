@@ -58,7 +58,7 @@ const Body = () => {
           }
         }
         
-        setTicket(result?.tickets)?.sort(sortBy)
+        setTicket(result?.tickets?.sort(sortBy))
         setTodoData(result?.tickets?.filter(item => item.status === "Todo").sort(sortBy));
         setBacklogData(result?.tickets?.filter(item => item.status === "Backlog").sort(sortBy));
         setProgData(result?.tickets?.filter(item => item.status === "In progress").sort(sortBy));

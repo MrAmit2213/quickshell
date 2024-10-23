@@ -8,7 +8,7 @@ const Row = (props) => {
     return (
         <div className={styles.row}>
             <div className={styles.head}>
-                <div className={styles.subHead}>
+                <div className={`${styles.subHead} ${props.type=='user'?styles.adj:''}`}>
                     <div className={styles.imggs}>
                         <img src={props.icon} alt="backlog" />
                         {props.type=='user' && <div className={`${styles.stat} ${props.avl?styles.actv:''}`}></div>}
