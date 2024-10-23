@@ -24,3 +24,8 @@
     color: grey;
     font-weight: bold;
 }
+
+.subHead img{
+    height: 30px;
+    width: 30px;
+}

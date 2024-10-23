@@ -10,6 +10,7 @@ const Row = (props) => {
             <div className={styles.head}>
                 <div className={styles.subHead}>
                     <img src={props.icon} alt="backlog" />
+                    
                     <p>{props.title}</p>
                     <div>{props.count}</div>
                 </div>
@@ -20,7 +21,7 @@ const Row = (props) => {
             </div>
             {props.data.map((item, index) => (
                 <div key={index}>
-                    <Card data={item} users={props.users} />
+                    <Card type={props.type} data={item} users={props.users} />
                 </div>
                 ))}
         </div>

@@ -73,3 +73,14 @@
 .active{
     background-color: rgb(2, 189, 2);
 }
+
+.titl img{
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.titl{
+    display: flex;
+}

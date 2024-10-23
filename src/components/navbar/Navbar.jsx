@@ -3,10 +3,17 @@ import styles from './navbar.module.css'
 import filterSvg from '../../icons/Display.svg'
 import downSvg from '../../icons/down.svg'
 
-const Navbar = () => {
+const Navbar = ({onGrp, onOdr}) => {
   const [display, setDisplay] = useState(false);
-  const [grp, setGrp] = useState('');
-  const [odr, setOdr] = useState('');
+  const [grp, setGrp] = useState(() => {
+    const data = localStorage.getItem('UserChoise');
+    return data ? JSON.parse(data).grp : 'status';
+  });
+
+  const [odr, setOdr] = useState(() => {
+    const data = localStorage.getItem('UserChoise');
+    return data ? JSON.parse(data).odr : 'priority';
+  });
 
   const fetchFil = ()=>{
     const data = localStorage.getItem('UserChoise');
@@ -24,20 +31,20 @@ const Navbar = () => {
   const show = () => {
     display ? setDisplay(false) : setDisplay(true);
   }
-
-  const storeData = () => {
+  useEffect(() => {
     const dataToStore = { grp, odr };
     localStorage.setItem('UserChoise', JSON.stringify(dataToStore));
-  };
+  }, [grp, odr]);
+
 
   const changeGrp = (e)=>{
     setGrp(e.target.value)
-    storeData();
+    onGrp(e.target.value)
   }
   
   const changeOdr = (e)=>{
     setOdr(e.target.value)
-    storeData();
+    onOdr(e.target.value)
   }
   
   return (
