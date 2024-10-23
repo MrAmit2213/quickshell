@@ -90,7 +90,7 @@ const Body = () => {
         <>
           {data.users?.map((item, index) => (
             <div key={index}>
-              <Row title={item.name} icon={prof} count={ticket?.filter(d => d.userId === item.id).length} data={ticket?.filter(d => d.userId === item.id)} users={data.users} type='user' />
+              <Row title={item.name} icon={prof} count={ticket?.filter(d => d.userId === item.id).length} data={ticket?.filter(d => d.userId === item.id)} users={data.users} type='user' avl={item.available} />
             </div>
           ))}
         </>

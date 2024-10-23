@@ -9,8 +9,10 @@ const Row = (props) => {
         <div className={styles.row}>
             <div className={styles.head}>
                 <div className={styles.subHead}>
-                    <img src={props.icon} alt="backlog" />
-                    
+                    <div className={styles.imggs}>
+                        <img src={props.icon} alt="backlog" />
+                        {props.type=='user' && <div className={`${styles.stat} ${props.avl?styles.actv:''}`}></div>}
+                    </div>
                     <p>{props.title}</p>
                     <div>{props.count}</div>
                 </div>

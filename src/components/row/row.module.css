@@ -29,3 +29,21 @@
     height: 30px;
     width: 30px;
 }
+
+.stat{
+    height: 12px;
+    width: 12px;
+    background-color: grey;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: relative;
+    bottom: 16px;
+    left: 17px;
+}
+.actv{
+    background-color: rgb(2, 180, 2);
+}
+
+.imggs{
+    padding-top: 15px;
+}
