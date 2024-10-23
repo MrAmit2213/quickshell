@@ -1,0 +1,26 @@
+.row{
+    width: 100%;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.head p{
+    margin: 0;
+    font-weight: bold;
+}
+
+.subHead{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.subHead div{
+    color: grey;
+    font-weight: bold;
+}

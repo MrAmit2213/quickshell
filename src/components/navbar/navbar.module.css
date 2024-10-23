@@ -1,0 +1,65 @@
+.navbar {
+    font-weight: 600;
+    padding: 15px 30px 15px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    padding: 5px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.349);
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 -2px 3px rgba(0, 0, 0, 0.1), 2px 0 3px rgba(0, 0, 0, 0.1), -2px 0 3px rgba(0, 0, 0, 0.1);
+    margin: 0 0 0 30px;
+}
+
+.filter p {
+    margin: 0;
+}
+
+.hoverBox {
+    display: none;
+    background-color: rgb(248 250 251);
+    border: rgba(128, 128, 128, 0.13) 1px solid;
+    box-shadow: 0 2px 20px 10px rgba(0, 0, 0, 0.1), 0 -2px 5px rgba(0, 0, 0, 0.1), 2px 0 5px rgba(0, 0, 0, 0.1), -2px 0 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 10;
+    top: 60px;
+    left: 50px;
+    padding: 20px 15px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.select{
+    font-weight: bold;
+    padding: 5px;
+    outline: none;
+    border-radius: 4px;
+    padding-right: 40px;
+    border-color: grey;
+}
+
+.align{
+    display: flex;
+    justify-content: space-between;
+}
+
+.align p{
+    margin: 0;
+    color: rgba(128, 128, 128, 0.774);
+}
+
+.disp{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blk{
+    display: block;
+}
